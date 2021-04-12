@@ -1,0 +1,240 @@
+body{
+    padding:0;
+    margin:0;
+    height:100%;
+}
+a:hover{
+    text-decoration: none !important;
+}
+#pageContainer{
+    height:100%;
+    width:100%;
+}
+#mastHeadContainer{
+    background:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    height:56px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    border-bottom: 1px solid #e8e8e8;
+    z-index:1;
+    box-sizing:border-box;
+    padding: 7px 16px;
+}
+#sideNavContainer{
+    width:240px;
+    background-color:#f5f5f5;
+    position:fixed;
+    top:0;
+    bottom:0;
+    padding-top:56px;
+    display:flex;
+    flex-direction:column;
+
+}
+#mainSectionContainer{
+    padding:56px 0 0 10px;
+    display:flex;
+    flex: 1;
+}
+#mainSectionContainer.leftPadding{
+    padding-left: 240px ;
+    
+}
+#mainContentContainer{
+    padding:10px 30px;
+    display: flex;
+    flex: 1;
+
+}
+#mainContentContainer .column{
+    flex: 1;
+    min-height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
+    background-color: #fff;
+}
+#showHideSide{
+    padding: 8px;
+    border: none;
+    background: none;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+}
+#showHideSide img{
+    width:100%;
+}
+#mastHeadContainer img{
+    margin-left: 8px;
+    height: 25px;
+    vertical-align: middle;
+}
+/* Search Bar  */
+.searchBarContainer{
+    margin:0 40px;
+    display: flex;
+    flex:1;
+}
+.searchBarContainer form{
+    flex:1;
+    display: flex;
+}
+.searchBarContainer form input{
+    flex:1;
+    max-width: 600px;
+    color:#111;
+    font-size:14px;
+    font-weight: 100;
+    border: 1px solid #ccc;
+    padding:2px 6px;
+    border-radius:2px 0 0 2px;
+    height:32px;
+    box-shadow: #eee 0px 1px 2px 0px inset;
+    border-right:none;
+}
+.searchBarContainer form button{
+    height: 32px;
+    border: 1px solid #d3d3d3;
+    background-color: #f8f8f8;
+    outline: none;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    width: 65px;
+
+}
+.searchBarContainer form button img{
+    height: 20px;
+    widows: 20px;
+}
+.signinContainer{
+    height: 100vh;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signinContainer .column{
+    background: #fff;
+    min-height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+    padding: 20px;
+    width: 450px;
+}
+.signinContainer .column img{
+    width: 100px;
+}
+.signinContainer .header{
+    padding:20px 0;
+}
+.signinContainer .header h3{
+    font-size:24px;
+    font-weight: 400;
+    line-height:32px;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 16px;
+}
+.signinContainer .header span{
+    font-size:14px;
+}
+.signinContainer .loginForm form{
+    display: flex;
+    flex-direction: column;
+}
+.signinContainer .loginForm form input:not(:last-child){
+    border:none;
+    margin:10px 0;
+    border-bottom:1px solid #dedede;
+}
+.signinContainer .loginForm form input:last-child{
+    background-color: #4285f4;
+    color: #fff;
+    height: 36px;
+    width:88px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+a.signInMessage{
+    font-size: 14px;
+    font-weight: 400;
+    color: #212529;
+}
+.errorMessage{
+    color: #f00;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+.watchLeftColumn{
+    flex:1;
+}
+.watchLeftColumn .videoPlayer{
+    width:100%;
+}
+ .suggestions{
+    max-width:400px;
+    flex:1;
+    height:100%;
+    padding-left:24px;
+    
+}
+.videoInfo h1{
+    display: block;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight:400;
+    line-height: 24px;
+}
+.buttomSection{
+    display: flex;
+}
+.buttomSection span.views{
+    flex: 1;
+    color: gray;
+    font-size: 16px;
+}
+.controls button{
+    background-color:transparent;
+    border:none;
+    outline:none;
+}
+.secondaryInfo{
+    display:flex;
+    margin-bottom:12px;
+    align-items: center;
+}
+.profilePic{
+    width:48px;
+    margin-right:12px;
+    border-radius:50%;
+
+}
+.uploadInfo{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+.uploadInfo .date{
+    color:rgba(17,17,17,0.6);
+    font-size:17px;
+    font-weight:400;
+}
+.subscribeButton,.editButton{
+    border:none;
+    border-radius:2px;
+    padding: 10px;
+    font-size: 14px;
+
+}
+.subscribeButton,.editButton{
+    background-color: red;
+    color:#fff;
+}
